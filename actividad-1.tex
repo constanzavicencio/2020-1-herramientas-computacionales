@@ -1,0 +1,45 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx} %
+
+\begin{document}
+
+\section{CINEMÁTICA III}
+\underline{\textbf{PROBLEMA 1:}} En la figura se ilustra una sala rectangular de longitud \underline{b} y ancho \underline{$\lambda b$}. Desde la esquina $P$ será arrastrada en forma rectílinea una zanahoria con rapidez constante \underline{$u$} para desaparecer por la esquina $Q$. Desde el rincón $E$ correrá en forma recta una liebre con rapidez constante \underline{$v$} para alcanzar a la zanahoria $(v>u)$. La liebre se propone atrapar la zanahoria a punto de desaparecer por $Q$.
+
+[4Pt] Determine el lapso $T$ que debe esperar la liebre para comenzar su carrera a contar del instante en que la zanahoria emerge por $P$.
+
+[2Pt] Determine el ancho mínimo de la sala $\lambda p$ que permite que la liebre atrape la zanahoria antes de desaparecer por la esquina $Q$.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.3\textwidth]{Imagen 1.jpg}
+\end{figure}
+
+\section{Solución}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.3\textwidth]{Imagen 2.jpg}
+\end{figure}
+
+Sea $t$ el lapso que tarda la liebre en llegar a la esquina $Q$. Entonces, de acuerdo al triángulo dibujado se tiene
+
+$$(vt^2)=b^{2}+\lambda b^{2} \rightarrow vt=b\sqrt{1+\lambda^{2}}$$
+
+Considerando el cateto superior...
+
+$$uT+ut=\lambda b$$
+
+Combinando ambos resultados y despejando $T$...
+
+$$T=\frac{\lambda b}{u}-\frac{b}{v}\sqrt{1+\lambda ^{2}}$$
+
+Para que la liebre alcance la zanahoria se exige que $T\geq 0$. Entonces
+
+$$\frac{\lambda b}{u}\geq \frac{vb}{v}\sqrt{1+\lambda^{2}}\rightarrow \lambda^{2}\left(\frac{1}{u^{2}}-\frac{1}{v^{2}}\right)\geq \frac{1}{v^{2}}$$
+con lo cual
+$$\lambda b \geq b \frac{u}{\sqrt{v^{2}-u^{2}}}$$
+
+
+\end{document}
